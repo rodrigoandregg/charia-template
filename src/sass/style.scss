@@ -1,0 +1,172 @@
+@import "reset", "boxes";
+
+body {
+  overflow-x: hidden;
+}
+
+ion-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  @include flexBox($ff: row nowrap, $jc: space-between);
+  width: 100%;
+  height: 4em;
+  padding: 0.5em 1em;
+  background-color: $dark;
+  color: $light;
+  position: relative;
+
+  &__btn {
+    @include flexBox;
+    z-index: 2;
+    color: $light;
+    width: 4em;
+    height: 4em;
+    position: relative;
+  }
+
+  &__icon {
+    z-index: 1;
+    display: flex;
+  }
+
+  &__link {
+    @include flexBox;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__img {
+    width: 12em;
+  }
+}
+
+.nav {
+  width: 0vw;
+  height: 100vh;
+  padding: 4em 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: $dark;
+  transition: all 0.2s ease-out;
+
+  &__menu {
+    @include flexBox($jc: start, $ai: start);
+    gap: 1em;
+    font-size: 1.2em;
+    padding: 1em;
+  }
+}
+
+.active {
+  display: flex;
+  width: 40vw;
+}
+
+//main
+.main {
+  @include flexBox($ai: start);
+  width: 100%;
+}
+// slider
+
+.slider {
+  @include flexBox($ff: row nowrap);
+  width: 300%;
+  height: 90vh;
+  margin-left: -100%;
+  position: relative;
+
+  &__buttons {
+    position: absolute;
+    color: $light;
+    @include flexBox;
+    gap: 2em;
+    font-weight: 600;
+    width: 2em;
+    right: 64em;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    color: $light;
+    @include flexBox($ai: start, $jc: start);
+
+    &--1 {
+      background: url(../images/banner1.jpg) center no-repeat;
+      background-size: cover;
+    }
+    &--2 {
+      background: url(../images/banner2.jpg) center no-repeat;
+      background-size: cover;
+    }
+    &--3 {
+      background: url(../images/banner3.jpg) center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__info {
+    @include flexBox($ai: start);
+    width: 25em;
+    margin: 7em 0 0 11em;
+    gap: 1em;
+  }
+
+  &__h2 {
+    font-size: 1.5em;
+    font-family: $font-2;
+    font-style: italic;
+  }
+
+  &__h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__p {
+    font-size: 1.1em;
+  }
+
+  &__link {
+    background: $light;
+    color: $dark;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7em;
+    padding: 1.5em 2em;
+    border: 1px solid $dark;
+    margin-top: 2em;
+  }
+}
+
+.location {
+  position: absolute;
+  color: $light;
+  bottom: 8vh;
+  left: 0;
+  right: 16em;
+  @include flexBox($ff: row nowrap);
+  gap: 1em;
+
+  &__icon {
+    width: 3em;
+    height: 3em;
+  }
+
+  &__info {
+    @include flexBox($ai: start);
+  }
+
+  &__h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+}

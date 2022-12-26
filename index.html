@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charia</title>
-  <link rel="stylesheet" href="_./src/css/style.css">
-  <script defer src="_./src/js/main.js"></script>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script defer src="./src/js/main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -36,44 +36,52 @@
 
 <body>
   <header class="header">
-    <button class="hearder__btn">
-      <ion-icon name="menu-outline"></ion-icon>
-      <ion-icon name="arrow-back-outline"></ion-icon>
+    <button class="header__btn">
+      <ion-icon name="menu-outline" class="header__icon"></ion-icon>
     </button>
     <a href="#" class="header__link">
-      <img src="_./src/images/svg/logo-inverse-196x45.svg" alt="Charia logo">
+      <img class="header__img" src="./src/images/svg/logo-inverse-196x45.svg" alt="Charia logo">
     </a>
     <nav class="nav">
-      <li class="nav__item"><a href="#" class="nav__link" title="About">About</a></li>
-      <li class="nav__item"><a href="#" class="nav__link" title="Donations">Donations</a></li>
-      <li class="nav__item"><a href="#" class="nav__link" title="Pages">Pages</a></li>
-      <li class="nav__item"><a href="#" class="nav__link" title="Sermons">Sermons</a></li>
-      <li class="nav__item"><a href="#" class="nav__link" title="Shop">Shop</a></li>
-      <li class="nav__item"><a href="#" class="nav__link" title="Contact">Contact Us</a></li>
+      <ul class="nav__menu">
+        <li class="nav__item"><a href="#" class="nav__link" title="About">About</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" title="Donations">Donations</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" title="Pages">Pages</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" title="Sermons">Sermons</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" title="Shop">Shop</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" title="Contact">Contact Us</a></li>
+      </ul>
     </nav>
   </header>
   <main class="main">
     <section class="slider">
-      <div class="slider__info">
-        <h2 class="slider__h2">Reconnect with the Creator</h2>
-        <h1 class="slider__h1">Connect & Grow</h1>
-        <p class="slider__p">Our church is a perfect place for all local residents to come in with their families and
-          join for a prayer and a newfound peace of mind.</p>
-        <a href="#">see more</a>
+      <div class="slider__wrapper slider__wrapper--1">
+        <div class="slider__info">
+          <h2 class="slider__h2">Reconnect with the Creator</h2>
+          <h1 class="slider__h1">Connect & Grow</h1>
+          <p class="slider__p">Our church is a perfect place for all local residents to come in with their families and
+            join for a prayer and a newfound peace of mind.</p>
+          <a href="#" class="slider__link">see more</a>
+        </div>
       </div>
-      <div class="slider__info">
-        <h2 class="slider__h2"> Embrace Your Faith</h2>
-        <h1 class="slider__h1">Connect & Grow</h1>
-        <p class="slider__p">Our church is a perfect place for all local residents to come in with their families and
-          join for a prayer and a newfound peace of mind.</p>
-        <a href="#">see more</a>
+      <div class="slider__wrapper slider__wrapper--2">
+        <div class="slider__info">
+          <h2 class="slider__h2"> Embrace Your Faith</h2>
+          <h1 class="slider__h1">Share the love</h1>
+          <p class="slider__p">At our church, we help people to find their way back to God. We accomplish this by
+            reaching
+            people far from God.</p>
+          <a href="#" class="slider__link">see more</a>
+        </div>
       </div>
-      <div class="slider__info">
-        <h2 class="slider__h2"> Reconnect with the Creator</h2>
-        <h1 class="slider__h1">Connect & Grow</h1>
-        <p class="slider__p">Our church is a perfect place for all local residents to come in with their families and
-          join for a prayer and a newfound peace of mind.</p>
-        <a href="#">see more</a>
+      <div class="slider__wrapper slider__wrapper--3">
+        <div class="slider__info">
+          <h2 class="slider__h2">Welcome to Our Church</h2>
+          <h1 class="slider__h1">Join the prayer</h1>
+          <p class="slider__p">Charia Church is a Family of Faith that is committed to Bible teaching and joyful worship
+            for children, youth and adults of all ages.</p>
+          <a href="#" class="slider__link">see more</a>
+        </div>
       </div>
       <div class="slider__location location">
         <div class="location__icon">
