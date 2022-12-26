@@ -1,0 +1,12 @@
+{
+  "name": "templatedir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./src/sass:./src/css"
+  },
+  "keywords": [],
+  "author": "Rodrigo Andre Gutierrez <rodrigoandregutierrez@gmail.com>",
+  "license": "MIT"
+}
