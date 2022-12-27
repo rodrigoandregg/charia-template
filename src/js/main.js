@@ -4,6 +4,13 @@ const navBar = document.querySelector(".nav");
 
 btn.addEventListener("click", () => {
   navBar.classList.toggle("active");
+
+  // impedir scroll mientras menu está abierto
+  if (navBar.classList.contains("active")) {
+    document.body.style.overflowY = "hidden";
+  } else {
+    document.body.style.overflowY = "visible";
+  }
 });
 
 // slider

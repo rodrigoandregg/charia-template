@@ -2,6 +2,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: $dark;
 }
 
 ion-icon {
@@ -13,10 +14,11 @@ ion-icon {
   @include flexBox($ff: row nowrap, $jc: space-between);
   width: 100%;
   height: 4em;
-  padding: 0.5em 1em;
+  padding: 0.5em 6em 0.5em 1em;
   background-color: $dark;
   color: $light;
-  position: relative;
+  position: fixed;
+  z-index: 1;
 
   &__btn {
     @include flexBox;
@@ -54,6 +56,7 @@ ion-icon {
   overflow: hidden;
   background-color: $dark;
   transition: all 0.2s ease-out;
+  z-index: 1;
 
   &__menu {
     @include flexBox($jc: start, $ai: start);
@@ -80,6 +83,7 @@ ion-icon {
   width: 300%;
   height: 90vh;
   margin-left: -100%;
+  margin-top: 4em;
   position: relative;
 
   &__buttons {
@@ -168,5 +172,224 @@ ion-icon {
   &__h2 {
     font-size: 1.2em;
     font-weight: 600;
+  }
+}
+
+.baptism {
+  background-color: $light;
+  padding: 4.5em 14.5em 4.5em 2.5em;
+  width: 100%;
+
+  &__h2 {
+    font-size: 1.4em;
+    line-height: 1.3;
+    padding: 0 1em;
+    border-left: 3px solid $accent;
+  }
+}
+
+.about {
+  @include flexBox($ff: row nowrap, $ai: stretch);
+  background-color: $main-bg;
+  width: 100%;
+
+  &__img {
+    background-color: goldenrod;
+    min-width: 26em;
+    object-fit: cover;
+  }
+
+  &__info {
+    @include flexBox($ai: start);
+    padding: 3em;
+    gap: 1em;
+  }
+
+  &__h2 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  &__p {
+    color: $text;
+    line-height: 1.5;
+    font-size: 1.1em;
+  }
+
+  &__links {
+    @include flexBox($ff: row nowrap);
+    gap: 1em;
+  }
+
+  &__link {
+    background-color: $accent;
+    color: $light;
+    padding: 1.5em 2.5em;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin-top: 2em;
+
+    &--light {
+      background-color: transparent;
+      color: $dark;
+      border: 1px solid $dark;
+    }
+  }
+}
+
+.ministries {
+  @include flexBox($ai: start);
+  color: $light;
+  gap: 1em;
+  padding: 8em 3em 3em 3em;
+  width: 100%;
+
+  &__h2 {
+    font-size: 2.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    @include flexBox($ff: row nowrap);
+    gap: 1em;
+  }
+
+  &__card {
+    @include flexBox($ff: row nowrap);
+    border-left: 1px solid $text;
+    padding: 1em;
+    gap: 1em;
+  }
+
+  &__icon {
+    color: $accent;
+    width: 3em;
+    height: 3em;
+  }
+
+  &__h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+}
+
+.sermons {
+  background-color: $light;
+  width: 100%;
+  @include flexBox;
+  padding: 6em 3em 3em;
+  gap: 2em;
+
+  &__info {
+    width: 100%;
+    @include flexBox($ff: row nowrap, $jc: space-between);
+    gap: 1em;
+  }
+
+  &__h2 {
+    font-size: 2.4em;
+    font-weight: 600;
+    width: 8em;
+  }
+
+  &__p {
+    font-size: 1.1em;
+    color: $text;
+    line-height: 1.5;
+    width: 30em;
+  }
+
+  &__container {
+    @include flexBox($ff: row nowrap, $ai: stretch, $jc: start);
+    gap: 2em;
+    width: 150%;
+    margin-left: 50%;
+  }
+}
+
+.card {
+  @include flexBox;
+  box-shadow: 0 20px 40px $shadow;
+  width: 18em;
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    @include flexBox($ai: start);
+    gap: 1em;
+    padding: 1.5em;
+  }
+
+  &__span {
+    @include flexBox;
+    color: $accent;
+    background-color: $soft;
+    padding: 0.5em 0.8em;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &__divider {
+    border-bottom: 1px solid $gray;
+    width: 20%;
+  }
+}
+
+.control {
+  @include flexBox($ff: row nowrap, $jc: space-between, $ai: stretch);
+  color: $dark;
+  width: 100%;
+  height: 2em;
+
+  &__pag {
+    @include flexBox($ff: row nowrap, $jc: start);
+    width: 10%;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+
+  &__progressbar {
+    @include flexBox($ff: row nowrap, $jc: start);
+    align-self: center;
+    width: 80%;
+    height: 0.2em;
+    overflow: hidden;
+    border-radius: 5em;
+    background-color: $gray;
+    position: relative;
+  }
+
+  &__progress {
+    position: absolute;
+    left: 0;
+    align-self: start;
+    width: 25%;
+    height: 1em;
+    background-color: $accent;
+    transition: all 0.3s linear;
+  }
+
+  &__buttons {
+    @include flexBox($ff: row nowrap, $jc: end);
+    width: 10%;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 1.2em;
   }
 }

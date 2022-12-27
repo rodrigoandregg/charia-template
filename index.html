@@ -98,7 +98,7 @@
         community, welcoming new believers into the body of Christ through baptism.</h2>
     </section>
     <section class="about">
-      <img src="_./src/images/about.jpg" alt="church photo">
+      <img class="about__img" src="./src/images/about.jpg" alt="church photo">
       <div class="about__info">
         <h2 class="about__h2">ABOUT OUR CHURCH</h2>
         <p class="about__p">At Charia Church, we want the love that Christ showed on the cross to flow out of our lives,
@@ -116,30 +116,35 @@
     <section class="ministries">
       <h2 class="ministries__h2">our ministries</h2>
       <div class="ministries__container">
-        <div class="ministries__icon">
-          <ion-icon name="people-outline"></ion-icon>
+        <div class="ministries__card">
+          <div class="ministries__icon">
+            <ion-icon name="people-outline"></ion-icon>
+          </div>
+          <h3 class="ministries__h3">Men’s Ministry</h3>
         </div>
-        <h3 class="ministries__h3">Men’s Ministry</h3>
-      </div>
-      <div class="ministries__container">
-        <div class="ministries__icon">
-          <ion-icon name="woman-outline"></ion-icon>
+        <div class="ministries__card">
+          <div class="ministries__icon">
+            <ion-icon name="woman-outline"></ion-icon>
+          </div>
+          <h3 class="ministries__h3">
+            Ladies Ministry</h3>
         </div>
-        <h3 class="ministries__h3">
-          Ladies Ministry</h3>
-      </div>
-      <div class="ministries__container">
-        <div class="ministries__icon">
-          <ion-icon name="heart-outline"></ion-icon>
+        <div class="ministries__card">
+          <div class="ministries__icon">
+            <ion-icon name="heart-outline"></ion-icon>
+          </div>
+          <h3 class="ministries__h3">Couples’ Minstry</h3>
         </div>
-        <h3 class="ministries__h3">Couples’ Minstry</h3>
-      </div>
-      <div class="ministries__container">
-        <div class="ministries__icon">
-          <ion-icon name="home-outline"></ion-icon>
+        <div class="ministries__card">
+          <div class="ministries__icon">
+            <ion-icon name="home-outline"></ion-icon>
+          </div>
+          <h3 class="ministries__h3">Teen Ministry</h3>
         </div>
-        <h3 class="ministries__h3">Teen Ministry</h3>
       </div>
+
+
+
     </section>
     <section class="sermons">
       <div class="sermons__info">
@@ -149,37 +154,37 @@
       </div>
       <ul class="sermons__container">
         <li class="sermons__card card">
-          <img class="card__img" src="_./src/images/sermon1.jpg" alt="church photo">
+          <img class="card__img" src="./src/images/sermon1.jpg" alt="church photo">
           <div class="card__info">
-            <span class="card__sapan">sermons</span>
-            <h3 class="card__h3"></h3>
+            <span class="card__span">sermons</span>
+            <h3 class="card__h3">God’s Cure For the World’s Worst Disease</h3>
             <span class="card__divider"></span>
             <p class="card__p"><time datetime="2020-11-12">Nobember 122, 2020</time></p>
           </div>
         </li>
         <li class="sermons__card card">
-          <img class="card__img" src="_./src/images/sermon1.jpg" alt="church photo">
+          <img class="card__img" src="./src/images/sermon2.jpg" alt="church photo">
           <div class="card__info">
-            <span class="card__sapan">sermons</span>
-            <h3 class="card__h3"></h3>
+            <span class="card__span">sermons</span>
+            <h3 class="card__h3">Christian Life: Running Well, Finishing Strong</h3>
             <span class="card__divider"></span>
             <p class="card__p"><time datetime="2020-11-12">Nobember 122, 2020</time></p>
           </div>
         </li>
         <li class="sermons__card card">
-          <img class="card__img" src="_./src/images/sermon1.jpg" alt="church photo">
+          <img class="card__img" src="./src/images/sermon3.jpg" alt="church photo">
           <div class="card__info">
-            <span class="card__sapan">sermons</span>
-            <h3 class="card__h3"></h3>
+            <span class="card__span">sermons</span>
+            <h3 class="card__h3">The Passing of Religious Opportunity</h3>
             <span class="card__divider"></span>
             <p class="card__p"><time datetime="2020-11-12">Nobember 122, 2020</time></p>
           </div>
         </li>
         <li class="sermons__card card">
-          <img class="card__img" src="_./src/images/sermon1.jpg" alt="church photo">
+          <img class="card__img" src="./src/images/sermon4.jpg" alt="church photo">
           <div class="card__info">
-            <span class="card__sapan">sermons</span>
-            <h3 class="card__h3"></h3>
+            <span class="card__span">sermons</span>
+            <h3 class="card__h3">Christian Life: Where Are My Strengths? (Romans 12:1-8)</h3>
             <span class="card__divider"></span>
             <p class="card__p"><time datetime="2020-11-12">Nobember 122, 2020</time></p>
           </div>
@@ -189,7 +194,8 @@
         <div class="control__pag">
           <span class="control__count">01</span>/04</span>
         </div>
-        <div class="control__progress">
+        <div class="control__progressbar">
+          <span class="control__progress"></span>
         </div>
         <div class="control__buttons">
           <div class="control__btn control__btn--prev">

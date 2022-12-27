@@ -69,7 +69,7 @@ q:after {
 
 ::selection {
   background-color: #272b37;
-  color: #f6f4f5;
+  color: #ffffff;
 }
 
 form,
@@ -114,6 +114,7 @@ body {
 
 body {
   overflow-x: hidden;
+  background-color: #272b37;
 }
 
 ion-icon {
@@ -128,10 +129,11 @@ ion-icon {
   align-items: center;
   width: 100%;
   height: 4em;
-  padding: 0.5em 1em;
+  padding: 0.5em 6em 0.5em 1em;
   background-color: #272b37;
-  color: #f6f4f5;
-  position: relative;
+  color: #ffffff;
+  position: fixed;
+  z-index: 1;
 }
 .header__btn {
   display: flex;
@@ -139,7 +141,7 @@ ion-icon {
   justify-content: center;
   align-items: center;
   z-index: 2;
-  color: #f6f4f5;
+  color: #ffffff;
   width: 4em;
   height: 4em;
   position: relative;
@@ -171,6 +173,7 @@ ion-icon {
   overflow: hidden;
   background-color: #272b37;
   transition: all 0.2s ease-out;
+  z-index: 1;
 }
 .nav__menu {
   display: flex;
@@ -203,11 +206,12 @@ ion-icon {
   width: 300%;
   height: 90vh;
   margin-left: -100%;
+  margin-top: 4em;
   position: relative;
 }
 .slider__buttons {
   position: absolute;
-  color: #f6f4f5;
+  color: #ffffff;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -220,7 +224,7 @@ ion-icon {
 .slider__wrapper {
   width: 100%;
   height: 100%;
-  color: #f6f4f5;
+  color: #ffffff;
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
@@ -261,7 +265,7 @@ ion-icon {
   font-size: 1.1em;
 }
 .slider__link {
-  background: #f6f4f5;
+  background: #ffffff;
   color: #272b37;
   text-transform: uppercase;
   font-weight: 600;
@@ -273,7 +277,7 @@ ion-icon {
 
 .location {
   position: absolute;
-  color: #f6f4f5;
+  color: #ffffff;
   bottom: 8vh;
   left: 0;
   right: 16em;
@@ -296,6 +300,246 @@ ion-icon {
 .location__h2 {
   font-size: 1.2em;
   font-weight: 600;
+}
+
+.baptism {
+  background-color: #ffffff;
+  padding: 4.5em 14.5em 4.5em 2.5em;
+  width: 100%;
+}
+.baptism__h2 {
+  font-size: 1.4em;
+  line-height: 1.3;
+  padding: 0 1em;
+  border-left: 3px solid #cf4a46;
+}
+
+.about {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #f6f4f5;
+  width: 100%;
+}
+.about__img {
+  background-color: goldenrod;
+  min-width: 26em;
+  object-fit: cover;
+}
+.about__info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  padding: 3em;
+  gap: 1em;
+}
+.about__h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+.about__p {
+  color: #515151;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+.about__links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.about__link {
+  background-color: #cf4a46;
+  color: #ffffff;
+  padding: 1.5em 2.5em;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-top: 2em;
+}
+.about__link--light {
+  background-color: transparent;
+  color: #272b37;
+  border: 1px solid #272b37;
+}
+
+.ministries {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  color: #ffffff;
+  gap: 1em;
+  padding: 8em 3em 3em 3em;
+  width: 100%;
+}
+.ministries__h2 {
+  font-size: 2.3em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.ministries__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.ministries__card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #515151;
+  padding: 1em;
+  gap: 1em;
+}
+.ministries__icon {
+  color: #cf4a46;
+  width: 3em;
+  height: 3em;
+}
+.ministries__h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.sermons {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 6em 3em 3em;
+  gap: 2em;
+}
+.sermons__info {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.sermons__h2 {
+  font-size: 2.4em;
+  font-weight: 600;
+  width: 8em;
+}
+.sermons__p {
+  font-size: 1.1em;
+  color: #515151;
+  line-height: 1.5;
+  width: 30em;
+}
+.sermons__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: stretch;
+  gap: 2em;
+  width: 150%;
+  margin-left: 50%;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(81, 81, 81, 0.2549019608);
+  width: 18em;
+}
+.card__img {
+  height: 100%;
+  object-fit: cover;
+}
+.card__info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1em;
+  padding: 1.5em;
+}
+.card__span {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #cf4a46;
+  background-color: #f7d2d2;
+  padding: 0.5em 0.8em;
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.card__h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.card__divider {
+  border-bottom: 1px solid #cfcfcf;
+  width: 20%;
+}
+
+.control {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  color: #272b37;
+  width: 100%;
+  height: 2em;
+}
+.control__pag {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 10%;
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.control__progressbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  align-self: center;
+  width: 80%;
+  height: 0.2em;
+  overflow: hidden;
+  border-radius: 5em;
+  background-color: #cfcfcf;
+  position: relative;
+}
+.control__progress {
+  position: absolute;
+  left: 0;
+  align-self: start;
+  width: 25%;
+  height: 1em;
+  background-color: #cf4a46;
+  transition: all 0.3s linear;
+}
+.control__buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: center;
+  width: 10%;
+}
+.control__btn {
+  width: 100%;
+  height: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
