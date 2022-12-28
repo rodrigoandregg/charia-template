@@ -72,3 +72,25 @@ const nextTestimonial = () => {
 setInterval(() => {
   nextTestimonial();
 }, 6000);
+
+//sponsor
+const sponsorList = document.querySelector(".sponsor__list");
+let sponsorItem = document.querySelectorAll(".sponsor__item");
+let sponsorItemLast = sponsorItem[sponsorItem.length - 1];
+sponsorList.insertAdjacentElement("afterbegin", sponsorItemLast);
+const nextSponsor = () => {
+  let sponsorItemFirst = document.querySelectorAll(".sponsor__item")[0];
+
+  sponsorList.style.transition = "all 1s";
+  sponsorList.style.marginLeft = "-25%";
+
+  setTimeout(() => {
+    sponsorList.style.transition = "none";
+    sponsorList.insertAdjacentElement("beforeend", sponsorItemFirst);
+    sponsorList.style.marginLeft = "0";
+  }, 1000);
+};
+
+setInterval(() => {
+  nextSponsor();
+}, 3000);
