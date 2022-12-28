@@ -49,3 +49,26 @@ const prevImage = () => {
 setInterval(() => {
   nextImage();
 }, 6000);
+
+// testimonials
+const testimonialsList = document.querySelector(".testimonials__list");
+let testimonialsItem = document.querySelectorAll(".testimonials__item");
+let testimonialsItemLast = testimonialsItem[testimonialsItem.length - 1];
+testimonialsList.insertAdjacentElement("afterbegin", testimonialsItemLast);
+const nextTestimonial = () => {
+  let testimonialsItemFirst = document.querySelectorAll(
+    ".testimonials__item"
+  )[0];
+  testimonialsList.style.marginLeft = "-200%";
+  testimonialsList.style.transition = "all 1s";
+
+  setTimeout(() => {
+    testimonialsList.style.transition = "none";
+    testimonialsList.insertAdjacentElement("beforeend", testimonialsItemFirst);
+    testimonialsList.style.marginLeft = "-100%";
+  }, 1000);
+};
+
+setInterval(() => {
+  nextTestimonial();
+}, 6000);

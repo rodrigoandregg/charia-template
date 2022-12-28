@@ -15,14 +15,14 @@ ion-icon {
   width: 100%;
   height: 4em;
   padding: 0.5em 6em 0.5em 1em;
-  background-color: $dark;
+  background-color: $header;
   color: $light;
   position: fixed;
   z-index: 1;
 
   &__btn {
     @include flexBox;
-    z-index: 2;
+    z-index: 4;
     color: $light;
     width: 4em;
     height: 4em;
@@ -38,7 +38,7 @@ ion-icon {
     @include flexBox;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 4;
   }
 
   &__img {
@@ -56,7 +56,7 @@ ion-icon {
   overflow: hidden;
   background-color: $dark;
   transition: all 0.2s ease-out;
-  z-index: 1;
+  z-index: 3;
 
   &__menu {
     @include flexBox($jc: start, $ai: start);
@@ -391,5 +391,245 @@ ion-icon {
   &__btn {
     width: 100%;
     height: 1.2em;
+  }
+}
+
+.offer {
+  background-color: $main-bg;
+  width: 100%;
+  padding: 4em 3em;
+  @include flexBox;
+  gap: 2em;
+
+  &__h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    width: 100%;
+    @include flexBox($ff: row nowrap);
+    gap: 2em;
+  }
+
+  &__li {
+    @include flexBox;
+    gap: 1em;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__info {
+    @include flexBox;
+    gap: 1em;
+  }
+
+  &__text {
+    color: $accent;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  &__divider {
+    border-bottom: 1px solid $accent;
+    width: 2em;
+  }
+}
+
+.bio {
+  background-color: $dark;
+  color: $light;
+  height: 100vh;
+  width: 100%;
+  @include flexBox($ff: row nowrap);
+  padding: 2.5em;
+  gap: 2em;
+
+  &__info {
+    width: 40%;
+    @include flexBox($ai: start);
+    gap: 2em;
+  }
+
+  &__h2 {
+    font-size: 2.4em;
+    font-weight: 600;
+  }
+
+  &__p {
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+
+  &__cta {
+    padding: 1.6em 2em;
+    border: 1px solid $text;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+}
+
+.testimonials {
+  width: 60%;
+  @include flexBox($ai: end);
+  overflow: hidden;
+
+  &__img {
+    background-color: gray;
+    margin-right: -1em;
+    margin-bottom: -18em;
+    max-width: 25em;
+    height: 36em;
+    object-fit: cover;
+  }
+
+  &__list {
+    @include flexBox($ff: row nowrap);
+    align-self: start;
+    margin-left: -100%;
+    width: 300%;
+    background-color: $accent;
+  }
+
+  &__item {
+    @include flexBox;
+    gap: 1em;
+    padding: 2em 2em 3em 4em;
+  }
+
+  &__q {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &__person {
+    @include flexBox($ff: row nowrap, $jc: start);
+    gap: 1em;
+    width: 100%;
+  }
+
+  &__avatar {
+    background-color: gray;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__cite {
+    font-style: normal;
+  }
+}
+
+.team {
+  background-color: $light;
+  width: 100%;
+  padding: 4em 3em;
+  @include flexBox;
+  gap: 2em;
+
+  &__h2 {
+    font-size: 2.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    @include flexBox($ff: row nowrap, $ai: stretch);
+    width: 100%;
+    gap: 0.5em;
+  }
+
+  &__card {
+    @include flexBox($ai: start);
+    color: $light;
+    padding: 2em 3em 2em 1em;
+    gap: 0.6em;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $card-gradient;
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    &--edward {
+      background: url(../images/edward-gray.jpg) center no-repeat;
+      background-size: cover;
+    }
+    &--james {
+      background: url(../images/james-lee.jpg) center no-repeat;
+      background-size: cover;
+    }
+    &--harry {
+      background: url(../images/harry-smith.jpg) center no-repeat;
+      background-size: cover;
+    }
+    &--jack {
+      background: url(../images/jack-peters.jpg) center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__h3 {
+    font-size: 1.3em;
+  }
+
+  &__h4 {
+    font-family: $font-2;
+    font-style: italic;
+    font-size: 1.4em;
+  }
+
+  &__p {
+    font-weight: 500;
+    line-height: 1.5;
+    position: relative;
+    padding: 0.6em;
+    color: $gray;
+
+    &::before {
+      content: "";
+      background-color: $accent;
+      width: 2px;
+      height: 50%;
+      top: 25%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
+  }
+
+  &__link {
+    @include flexBox($ff: row nowrap, $jc: end);
+    align-self: end;
+    width: 2.4em;
+    height: 2.4em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: $light;
+    color: $accent;
+    padding: 0.5em;
   }
 }
