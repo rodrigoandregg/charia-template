@@ -3,6 +3,7 @@
 body {
   overflow-x: hidden;
   background-color: $dark;
+  position: relative;
 }
 
 ion-icon {
@@ -874,4 +875,18 @@ ion-icon {
     bottom: 0;
     z-index: -1;
   }
+}
+
+.upbtn {
+  background-color: $accent;
+  width: 3em;
+  height: 3em;
+  position: fixed;
+  right: 3em;
+  bottom: 2em;
+  padding: 1em;
+  color: $light;
+  cursor: pointer;
+  transform: scale(0);
+  transition: transform 0.3s linear;
 }

@@ -94,3 +94,21 @@ const nextSponsor = () => {
 setInterval(() => {
   nextSponsor();
 }, 3000);
+
+// upbtn
+
+const upBtn = document.querySelector(".upbtn");
+
+window.onscroll = () => {
+  let y = window.scrollY;
+  if (y >= 600) {
+    upBtn.style.transform = "scale(1)";
+  } else if (y < 600) {
+    upBtn.style.transform = "scale(0)";
+  }
+  console.log(typeof y);
+};
+
+upBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
