@@ -962,4 +962,109 @@ ion-icon {
   object-fit: contain;
 }
 
+.footer {
+  background-color: #1c1f26;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 3em 0 5em;
+  gap: 3em;
+  overflow: hidden;
+}
+.footer__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer__rights {
+  color: #515151;
+}
+
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid #515151;
+  padding-bottom: 3em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.navbar__item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navbar__link {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.contact__span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.contact__number {
+  color: #cf4a46;
+  font-size: 1.6em;
+}
+.contact__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2em;
+  gap: 1em;
+  position: relative;
+}
+.contact__item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #515151;
+  background-color: #272b37;
+}
+.contact__link {
+  color: #515151;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.6em;
+}
+.contact__line {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #515151;
+  width: 500%;
+  height: 1px;
+  top: 50%;
+  bottom: 0;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */

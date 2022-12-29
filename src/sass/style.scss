@@ -785,3 +785,93 @@ ion-icon {
     object-fit: contain;
   }
 }
+
+// footer
+
+.footer {
+  background-color: $dark;
+  @include flexBox;
+  color: $light;
+  padding: 3em 0 5em;
+  gap: 3em;
+  overflow: hidden;
+
+  &__wrapper {
+    @include flexBox;
+    width: 100%;
+  }
+
+  &__rights {
+    color: $text;
+  }
+}
+
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid $text;
+  padding-bottom: 3em;
+  @include flexBox;
+  &__menu {
+    @include flexBox($ff: row nowrap, $jc: space-evenly);
+    width: 70%;
+  }
+
+  &__item {
+    @include flexBox;
+    width: 100%;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+}
+
+.contact {
+  @include flexBox;
+  z-index: 0;
+
+  &__span {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  &__number {
+    color: $accent;
+    font-size: 1.6em;
+  }
+
+  &__list {
+    @include flexBox($ff: row nowrap);
+    width: 100%;
+    margin-top: 2em;
+    gap: 1em;
+    position: relative;
+  }
+
+  &__item {
+    @include flexBox;
+    width: 100%;
+    border: 1px solid $text;
+    background-color: $btn;
+  }
+
+  &__link {
+    color: $text;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.6em;
+  }
+
+  &__line {
+    position: absolute;
+    @include flexBox;
+    background-color: $text;
+    width: 500%;
+    height: 1px;
+    top: 50%;
+    bottom: 0;
+    z-index: -1;
+  }
+}
